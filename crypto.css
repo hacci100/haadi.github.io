@@ -1,15 +1,8 @@
 @font-face {
   src: url(fonts/Orbitron-VariableFont_wght.ttf ) format(truetype);
   font-family: Orbitron;
-}
+  }
 
-/* CSS Variables for Bitcoin color scheme */
-:root {
-  --btc-orange: #FF9900;
-  --dark-bg: #1a1a1a;
-  --light: #f8f8f8;
-  --translucent-dark: rgba(26, 26, 26, 0.9);
-}
 
 /* Global resets and typography */
 * {
@@ -24,6 +17,14 @@ body {
   color: var(--light);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+/* CSS Variables for Bitcoin color scheme */
+:root {
+  --btc-orange: #FF9900;
+  --dark-bg: #1a1a1a;
+  --light: #f8f8f8;
+  --translucent-dark: rgba(26, 26, 26, 0.9);
 }
 
 /* Content wrapper and background video */
@@ -53,7 +54,7 @@ body {
   text-align: left;
   padding: 1rem 0;
   margin-bottom: 2rem;
-  }
+}
 
 .header1 {
   font-size: 2.5rem;
@@ -61,15 +62,15 @@ body {
   text-shadow: 0 0 20px rgba(255, 153, 0, 0.6);
   margin-bottom: 0.5rem;
   font-family: "Orbitron", sans-serif; /* Ensure Orbitron font */
-  }
-  
-  .header2 {
+}
+
+.header2 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
   font-family: "Orbitron", sans-serif; /* Ensure Orbitron font */
-  }
+}
 
 /* Main content container with crypto styling */
 .content {
@@ -84,8 +85,9 @@ body {
 
 /* Navigation styling */
 .navbar {
-    font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
+
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -96,31 +98,29 @@ body {
   border-radius: 50px;
   margin-bottom: 1.5rem;
   padding: 0.5rem;
-  }
-  
-  .navbar li {
-  margin: 0.5rem;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: var(--light);
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
-    position: relative; /* Add relative positioning */
-  }
-  
-  .navbar a:hover {
-    background: var(--btc-orange);
-    transform: translateY(3px); /* Adjust the value to control how much it extends */
-    color: var(--dark-bg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-  }
-  
+}
 
+.navbar li {
+  margin: 0.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--light);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  position: relative; /* Add relative positioning */
+}
+
+.navbar a:hover {
+  background: var(--btc-orange);
+  transform: translateY(3px); /* Adjust the value to control how much it extends */
+  color: var(--dark-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
 
 /* Specific class styling for nav links to ensure consistent sizing */
 .Dropdownmenu,
@@ -145,7 +145,7 @@ body {
   white-space: pre-wrap; /* Allow line breaks while preserving whitespace */
   font-size: 1rem;
   word-wrap: break-word; /* Optional: Handle long words */
-  }
+}
 
 .hash {
   text-align: center;
@@ -158,39 +158,29 @@ body {
   border: 1px dashed var(--btc-orange);
   border-radius: 5px;
   transition: background 0.3s ease;
-  }
+}
 
-
-
-  
-  .hash:hover {
+.hash:hover {
   background: var(--btc-orange);
   color: var(--dark-bg);
-  }
+}
 
+.Homepagepara a:link,
+.Homepagepara a:visited {
+  color: var(--btc-orange); /* Sets the default text color */
+  text-decoration: none; /* Removes the underline */
+}
 
+.Homepagepara a:hover {
+  text-decoration: underline; /* Adds underline on hover if desired */
+}
 
-
-  .Homepagepara a:link,
-  .Homepagepara a:visited {
-      color: var(--btc-orange); /* Sets the default text color */
-      text-decoration: none; /* Removes the underline */
-  }
-  
-  .Homepagepara a:hover {
-      text-decoration: underline; /* Adds underline on hover if desired */
-  }
-  
-  .Homepagepara a:focus,
-  .Homepagepara a:active {
-      color: var(--btc-orange); /* Sets the color when the link is active/focused */
-      text-decoration: none; /* Removes the underline when active/focused */
-      background-color: transparent; /*remove purple background*/
-  }
-  
-
-
-
+.Homepagepara a:focus,
+.Homepagepara a:active {
+  color: var(--btc-orange); /* Sets the color when the link is active/focused */
+  text-decoration: none; /* Removes the underline when active/focused */
+  background-color: transparent; /*remove purple background*/
+}
 
 /* Block images with subtle neon glow */
 .blockimage {
@@ -199,16 +189,15 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px var(--btc-orange);
   transition: transform 0.3s ease;
-  }
-  
+}
 
- /* Pagination styles */
- .pagination {
+/* Pagination styles */
+.pagination {
   text-align: center;
   margin-top: 2rem;
-  }
-  
-  .pagination a {
+}
+
+.pagination a {
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0 0.5rem;
@@ -217,30 +206,135 @@ body {
   border-radius: 5px;
   transition: background 0.3s ease, transform 0.3s ease;
   color: var(--light);
-  }
-  
-  .pagination a:hover {
+}
+
+.pagination a:hover {
   background: var(--btc-orange);
   transform: scale(1.1);
   color: var(--dark-bg);
-  }
+}
 
-  /* Footer styles */
-  .home_footer {
-    text-align: center;
+/* Footer styles */
+.home_footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--btc-orange);
+  margin-top: 2rem;
+}
+
+.icons a {
+  margin: 0 1rem;
+  color: var(--light);
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons a:hover {
+  color: var(--btc-orange);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .content-wrapper {
     padding: 1rem;
-    border-top: 1px solid var(--btc-orange);
-    margin-top: 2rem;
-    }
-    
-    .icons a {
-    margin: 0 1rem;
-    color: var(--light);
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
-    }
-    
-    .icons a:hover {
-    color: var(--btc-orange);
-    transform: translateY(-3px);
-    }
+  }
+  
+  .header1 {
+    font-size: 2rem;
+  }
+  
+  .header2 {
+    font-size: 1.5rem;
+  }
+  
+  .content {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 0.2rem;
+  }
+  
+  .navbar a {
+    padding: 0.6rem 1rem;
+  }
+  
+  .Homepagepara {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .hash {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  .blockimage {
+    margin: 1rem auto;
+  }
+  
+  .pagination a {
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for very small screens */
+  .content-wrapper {
+    padding: 0.5rem;
+  }
+  
+  .header1 {
+    font-size: 1.8rem;
+  }
+  
+  .header2 {
+    font-size: 1.2rem;
+  }
+  
+  .content {
+    padding: 1rem;
+    max-width: 95%;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 0.1rem;
+  }
+  
+  .navbar a {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .Homepagepara {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .hash {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .blockimage {
+    margin: 0.8rem auto;
+  }
+  
+  .pagination a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
