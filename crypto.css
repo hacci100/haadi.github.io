@@ -1,0 +1,246 @@
+@font-face {
+  src: url(fonts/Orbitron-VariableFont_wght.ttf ) format(truetype);
+  font-family: Orbitron;
+}
+
+/* CSS Variables for Bitcoin color scheme */
+:root {
+  --btc-orange: #FF9900;
+  --dark-bg: #1a1a1a;
+  --light: #f8f8f8;
+  --translucent-dark: rgba(26, 26, 26, 0.9);
+}
+
+/* Global resets and typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background: var(--dark-bg);
+  color: var(--light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Content wrapper and background video */
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* Fullscreen background video */
+.content-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+}
+
+/* Hero section for site title overlay */
+.div1 {
+  text-align: left;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  }
+
+.header1 {
+  font-size: 2.5rem;
+  color: var(--btc-orange);
+  text-shadow: 0 0 20px rgba(255, 153, 0, 0.6);
+  margin-bottom: 0.5rem;
+  font-family: "Orbitron", sans-serif; /* Ensure Orbitron font */
+  }
+  
+  .header2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  font-family: "Orbitron", sans-serif; /* Ensure Orbitron font */
+  }
+
+/* Main content container with crypto styling */
+.content {
+  background: var(--translucent-dark);
+  border: 1px solid var(--btc-orange);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation styling */
+.navbar {
+    font-family: "Orbitron", sans-serif;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--btc-orange);
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  }
+  
+  .navbar li {
+  margin: 0.5rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--light);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .navbar a:hover {
+    background: var(--btc-orange);
+    transform: translateY(3px); /* Adjust the value to control how much it extends */
+    color: var(--dark-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  }
+  
+
+
+/* Specific class styling for nav links to ensure consistent sizing */
+.Dropdownmenu,
+.btc,
+.ltc,
+.kas,
+.fact {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+/* Preformatted paragraphs - retains spacing and gives a digital look */
+.Homepagepara {
+  font-family: "Courier New", monospace;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  border-left: 3px solid var(--btc-orange);
+  border-radius: 5px;
+  white-space: pre-wrap; /* Allow line breaks while preserving whitespace */
+  font-size: 1rem;
+  word-wrap: break-word; /* Optional: Handle long words */
+  }
+
+.hash {
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 1.1rem;
+  color: var(--light);
+  padding: 0.8rem;
+  margin: 1rem auto;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px dashed var(--btc-orange);
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  }
+
+
+
+  
+  .hash:hover {
+  background: var(--btc-orange);
+  color: var(--dark-bg);
+  }
+
+
+
+
+  .Homepagepara a:link,
+  .Homepagepara a:visited {
+      color: var(--btc-orange); /* Sets the default text color */
+      text-decoration: none; /* Removes the underline */
+  }
+  
+  .Homepagepara a:hover {
+      text-decoration: underline; /* Adds underline on hover if desired */
+  }
+  
+  .Homepagepara a:focus,
+  .Homepagepara a:active {
+      color: var(--btc-orange); /* Sets the color when the link is active/focused */
+      text-decoration: none; /* Removes the underline when active/focused */
+      background-color: transparent; /*remove purple background*/
+  }
+  
+
+
+
+
+/* Block images with subtle neon glow */
+.blockimage {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--btc-orange);
+  transition: transform 0.3s ease;
+  }
+  
+
+ /* Pagination styles */
+ .pagination {
+  text-align: center;
+  margin-top: 2rem;
+  }
+  
+  .pagination a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--btc-orange);
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  color: var(--light);
+  }
+  
+  .pagination a:hover {
+  background: var(--btc-orange);
+  transform: scale(1.1);
+  color: var(--dark-bg);
+  }
+
+  /* Footer styles */
+  .home_footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--btc-orange);
+    margin-top: 2rem;
+    }
+    
+    .icons a {
+    margin: 0 1rem;
+    color: var(--light);
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    }
+    
+    .icons a:hover {
+    color: var(--btc-orange);
+    transform: translateY(-3px);
+    }
